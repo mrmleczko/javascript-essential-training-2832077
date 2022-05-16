@@ -4,6 +4,7 @@
  */
 
 import Backpack from "Backpack.js";
+import Fish from "fish.js";
 
 const everydayPack = new Backpack(
   "Everyday Backpack",
@@ -15,6 +16,14 @@ const everydayPack = new Backpack(
   false,
   "December 5, 2018 15:00:00 PST"
 );
+const clownFish = new Fish(
+  "Clownfish",
+  "Small",
+  "Peaceful",
+  "Asthetics",
+  false,
+);
+  
 
 console.log("The everydayPack object:", everydayPack);
 console.log("Date acquired:", everydayPack.dateAcquired);
