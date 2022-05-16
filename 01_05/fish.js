@@ -2,9 +2,9 @@
 
 will be giving some properties so describe a fish
 */
-const updateBackpack = (update) => {
+const updateReefSafe = (update) => {
     let main = document.querySelector("main"); // main is an element
-    main.innerHTML = markup(backpack);
+    main.innerHTML = markup2(fish);
     
     console.info(update);
   };
@@ -35,7 +35,7 @@ const fish = {
 //     };    
   
 
-    const markup = (fish) => {
+    const markup2 = (fish) => {
         return `
         <div>
           <h3>${fish.name}</h3>
@@ -52,5 +52,5 @@ const fish = {
 
 
 const main = document.createElement("main");
-main.innerHTML = markup(fish);
+main.innerHTML = markup2(fish);
 document.body.appendChild(main);
