@@ -2,6 +2,30 @@
 
 will be giving some properties so describe a fish
 */
+
+class Fish {
+  constructor(
+    name,
+    size,
+    aggression,
+    purpose,
+    reefSafe
+  ) {
+    this.name = name;
+    this.volume = volume;
+    this.size = size;
+    this.aggression = aggression;
+    this.purpose = purpose;
+    this.reefSafe = reefSafe;
+  }
+  toggleLid(reefStatus) {
+    this.reefSafe = reefStatus;
+  }
+ 
+}
+
+export default Fish;
+
 const updateReefSafe = (update) => {
     let main = document.querySelector("main"); // main is an element
     main.innerHTML = markup2(fish);
@@ -9,18 +33,8 @@ const updateReefSafe = (update) => {
     console.info(update);
   };
   
-const fish = {
-    name: "Clownfish",
-    size: "Small",
-    aggression: "Peaceful",
-    purpose: "Asthetics",
-    reefSafe: false,
-    toggleSafe: function (fishStatus) {
-    this.fishChange = fishStatus;
-    updateReefSafe(`Fish status changed.`);
-  },
-}
 
+  
 // {
       
 //         // Define Properties here , class should be declared above
@@ -43,7 +57,7 @@ const fish = {
             <li>Size: ${fish.size}</li>
             <li>Aggression: ${fish.aggression}</li>
             <li>Purpose: ${fish.purpose}</li>
-            <li>Reef Safe: ${fish.fishChange ? "Peaceful" : "Aggressive"}</li>
+            <li>Reef Safe: ${fish.fishChange ? "True" : "False"}</li>
           </ul>
         </div>
       `;
