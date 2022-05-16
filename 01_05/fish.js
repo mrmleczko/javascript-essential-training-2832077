@@ -50,7 +50,7 @@ const fish = {
       };
 
 
-}
+
 const main = document.createElement("main");
 main.innerHTML = markup(fish);
 document.body.appendChild(main);
