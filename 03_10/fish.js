@@ -14,7 +14,7 @@ const fish = {
     size: "Small",
     aggression: "Peaceful",
     purpose: "Asthetics",
-    reefSafe: true,
+    reefSafe: false,
     toggleSafe: function (fishStatus) {
     this.fishChange = fishStatus;
     updateReefSafe(`Fish status changed.`);
