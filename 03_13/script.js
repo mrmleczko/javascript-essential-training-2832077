@@ -4,7 +4,7 @@
  */
 
 import Backpack from "Backpack.js";
-import Fish from "fish.js";
+import Fish from "Fish.js";
 
 const everydayPack = new Backpack(
   "Everyday Backpack",
@@ -23,7 +23,7 @@ const clownFish = new Fish(
   "Asthetics",
   false,
 );
-  
+
 
 console.log("The everydayPack object:", everydayPack);
 console.log("Date acquired:", everydayPack.dateAcquired);
